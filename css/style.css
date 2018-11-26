@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url('../jatuh.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+h1{
+    color: white;
+    font-size: 70px;
+}
+h2{
+    color: rgb(134, 134, 134);
+    font-size: 40px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.wadah{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.nav-atas {
+    background-color: black;
+    padding: 40px 5px;
+}
+.judul{
+    display: inline-block;
+}
+.menu-top{
+    display: inline-block;
+    list-style: none;
+    float: right;
+}
+.menu-top>li{
+    display: inline-block;
+    
+}
+.menu-top>li>a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+.menu-top a:hover{
+    color: yellow;
+}
+.toggle{
+    display: none;
+    font-size: 30px;
+    color: white;
+    float: right;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.event{
+    border: 1px solid black;
+    background-color: rgb(134, 158, 134);
+    margin-top: 10px;
+    padding: 10px;
+}
+.toggle:hover {
+    color: green;
+    }
+ 
+.dropdown {
+    float: right;
+    display: none;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: black;
+    min-width: 200px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+.bg-menu{
+    background-color: brown;
+    padding: 10px 100px;
+    margin: 10px 100px;
+}
+.bg-menu>ul{
+    list-style: none;
+}
+.bg-menu>ul>li{
+    display: inline-block;
+}
+.bg-menu>ul>li>a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 30px;
+ 
+}
+.bg-menu>ul>li>c{
+    text-decoration: none;
+    color:black;
+    padding: 5px 30px;
+ 
+}
+.bg-menu a:hover{
+    color:black;
+}
+.posting{
+    border: solid 2px rgba(0, 0, 0, 0.61);
+    background-color: white;
+    padding: 20px;
+}
+
+.menu-vertikal a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.menu-vertikal a:hover {
+    background-color: #ccc;
+}
+
+.menu-vertikal a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.footer{
+    background-color: rgb(117, 19, 19);
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+@media(max-width: 767px){
+    .wadah,.bg-menu{
+        margin: 0 15px;
+        padding: 2px;
+        
+    }
+    .nav-atas{
+        padding: 20px 0;
+    }
+    .bg-menu{
+        font-size: 12px;
+    }
+    [class*="col-"] {
+        width: 100%;
+    }
+    .bg-menu{
+        display: none;
+    }
+    .menu-top{
+        display: none;
+    }
+    .toggle{
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .dropdown{
+        display: inline-block;
+    }
+}
